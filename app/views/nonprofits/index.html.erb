@@ -1,0 +1,47 @@
+<h1>Listing nonprofits</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Founder</th>
+    <th>Logourl</th>
+    <th>Primaryphone</th>
+    <th>Secondaryphone</th>
+    <th>Primaryemail</th>
+    <th>Secondaryemail</th>
+    <th>Foundeddate</th>
+    <th>State</th>
+    <th>County</th>
+    <th>Country</th>
+    <th>Website</th>
+    <th>Pagetext</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nonprofits.each do |nonprofit| %>
+  <tr>
+    <td><%= nonprofit.name %></td>
+    <td><%= nonprofit.founder %></td>
+    <td><%= nonprofit.logourl %></td>
+    <td><%= nonprofit.primaryphone %></td>
+    <td><%= nonprofit.secondaryphone %></td>
+    <td><%= nonprofit.primaryemail %></td>
+    <td><%= nonprofit.secondaryemail %></td>
+    <td><%= nonprofit.foundeddate %></td>
+    <td><%= nonprofit.state %></td>
+    <td><%= nonprofit.county %></td>
+    <td><%= nonprofit.country %></td>
+    <td><%= nonprofit.website %></td>
+    <td><%= nonprofit.pagetext %></td>
+    <td><%= link_to 'Show', nonprofit %></td>
+    <td><%= link_to 'Edit', edit_nonprofit_path(nonprofit) %></td>
+    <td><%= link_to 'Destroy', nonprofit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nonprofit', new_nonprofit_path %>

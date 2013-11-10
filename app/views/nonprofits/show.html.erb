@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @nonprofit.name %>
+</p>
+
+<p>
+  <b>Founder:</b>
+  <%= @nonprofit.founder %>
+</p>
+
+<p>
+  <b>Logourl:</b>
+  <%= @nonprofit.logourl %>
+</p>
+
+<p>
+  <b>Primaryphone:</b>
+  <%= @nonprofit.primaryphone %>
+</p>
+
+<p>
+  <b>Secondaryphone:</b>
+  <%= @nonprofit.secondaryphone %>
+</p>
+
+<p>
+  <b>Primaryemail:</b>
+  <%= @nonprofit.primaryemail %>
+</p>
+
+<p>
+  <b>Secondaryemail:</b>
+  <%= @nonprofit.secondaryemail %>
+</p>
+
+<p>
+  <b>Foundeddate:</b>
+  <%= @nonprofit.foundeddate %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @nonprofit.state %>
+</p>
+
+<p>
+  <b>County:</b>
+  <%= @nonprofit.county %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @nonprofit.country %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @nonprofit.website %>
+</p>
+
+<p>
+  <b>Pagetext:</b>
+  <%= @nonprofit.pagetext %>
+</p>
+
+
+<%= link_to 'Edit', edit_nonprofit_path(@nonprofit) %> |
+<%= link_to 'Back', nonprofits_path %>
