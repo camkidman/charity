@@ -1,4 +1,6 @@
 Charity::Application.routes.draw do
+  devise_for :users
+
   root :to => "nonprofits#new"
   resources :nonprofits
 
